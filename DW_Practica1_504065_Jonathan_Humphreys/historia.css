@@ -1,0 +1,48 @@
+html, body {
+    cursor: url("cursor.cur"), default;
+    background-color: #e0a75a;
+}
+
+#title{
+    color:#251b11;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#history{
+    background-color:#794f27;
+    margin:-10px;
+    padding: 30px;
+}
+
+#link{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.text{
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:justify;
+    line-height: 1.5;
+    font-weight:bold;
+    padding:30px;
+    margin:-10px;
+}
+
+.values{
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom: 30px;
+    margin:-10px;
+    background-color:#98672f;
+}
+
+.values2{
+    padding-left:30px;
+    padding-right:30px;
+    padding-bottom: 30px;
+    margin:-10px;
+    background-color:#bf915d;
+}
+
+.subtitle{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

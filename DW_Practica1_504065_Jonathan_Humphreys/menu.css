@@ -1,0 +1,96 @@
+html, body {
+    cursor: url("cursor.cur"), default;
+    background-color: #e0a75a;
+}
+
+#title{
+    color:#251b11;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#link{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.column1{
+    width: 45%;
+    background-color:#bf915d;
+    border:3px solid #794f27;
+    padding:20px;
+    margin:10px;
+    float:left;
+}
+
+.column2{
+    width: 45%;
+    background-color:#bf915d;
+    border:3px solid #794f27;
+    padding:20px;
+    margin:10px;
+    float:right;
+}
+
+.column1 > img{
+    height: 250px;
+    width: 400px;
+    object-fit: fill;
+}
+
+.column2 > img{
+    height: 250px;
+    width: 400px;
+    object-fit: fill;
+}
+
+.column1 > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#251b11;
+    line-height: 1.4;
+    text-align:justify;
+}
+
+.column2 > p{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#251b11;
+    line-height: 1.4;
+    text-align:justify;
+}
+
+.type{
+    color:#251b11;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.price{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #251b11;
+}
+
+
+
+/*
+Newer browsers support flex, but some olders don't.
+
+What is flex?
+Flex is a system layout designed to make it easier to arrenge items wihin a container,
+especially when you want to align them or distribute space among them in a flexible way.
+
+Float is to move content inside a container to its left or right.
+
+There is the property flex that is shorthand for three properties: 
+- flex-grow
+- flex-shrink
+- flex-basis
+
+What is the difference between position relative and absolute?e
+static: default value, the element is positioned relative to its normal position.
+relative: it is positioned relative to its normal position.
+absolute: the element is positioned absolutely to its first positioned parent.
+fixed: the element is positioned related to the browser window.
+sticky: the element is positioned based on the user's scroll position.
+
+When an element in relative position moves, it will do so based on its past location. It will also not affect any other element on the layout.
+If an element set to relative position has child elements, those child elements can abosolutely position within that block.
+Absolute position is relative to the first relatively position parent element (if no parent element is found, it will use the page itself).
+Absolute position needs to be not overused or it can lead to maintaince nightmare.
+*/
