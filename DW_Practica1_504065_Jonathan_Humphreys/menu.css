@@ -12,60 +12,42 @@ html, body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.column1{
+.row{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin:10px;
+    padding:0px;
+}
+
+.column{
     width: 45%;
     background-color:#bf915d;
     border:3px solid #794f27;
     padding:20px;
-    margin:10px;
-    float:left;
+    margin:0 10px 15px 10px;
+    display:inline-block;
 }
 
-.column2{
-    width: 45%;
-    background-color:#bf915d;
-    border:3px solid #794f27;
-    padding:20px;
-    margin:10px;
-    float:right;
-}
-
-.column1 > img{
+.column img{
     height: 250px;
     width: 400px;
     object-fit: fill;
+    border:2px #794f27 solid;
 }
 
-.column2 > img{
-    height: 250px;
-    width: 400px;
-    object-fit: fill;
-}
-
-.column1 > p{
+.column p{
     font-family: Arial, Helvetica, sans-serif;
     color:#251b11;
     line-height: 1.4;
     text-align:justify;
 }
 
-.column2 > p{
-    font-family: Arial, Helvetica, sans-serif;
-    color:#251b11;
-    line-height: 1.4;
-    text-align:justify;
-}
-
-.type{
+.important{
     color:#251b11;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-.price{
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color: #251b11;
-}
-
 
 
 /*
