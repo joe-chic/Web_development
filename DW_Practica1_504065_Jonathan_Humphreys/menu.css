@@ -23,6 +23,8 @@ html, body {
 
 .column{
     width: 45%;
+    height: auto;
+    
     background-color:#bf915d;
     border:3px solid #794f27;
     padding:20px;
@@ -51,6 +53,7 @@ html, body {
 
 .wrapper{
     max-width:100%;
+    height: auto;
     object-fit: contain;
 }
 
