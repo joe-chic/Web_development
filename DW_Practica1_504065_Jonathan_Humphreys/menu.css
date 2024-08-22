@@ -49,6 +49,10 @@ html, body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.wrapper{
+    width:100%;
+    object-fit: contain;
+}
 
 /*
 Newer browsers support flex, but some olders don't.
