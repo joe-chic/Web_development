@@ -23,8 +23,6 @@ html, body {
 
 .column{
     width: 45%;
-    height: auto;
-    
     background-color:#bf915d;
     border:3px solid #794f27;
     padding:20px;
@@ -35,7 +33,7 @@ html, body {
 .column img{
     height: 250px;
     width: 400px;
-    object-fit: fill;
+    object-fit: cover;
     border:2px #794f27 solid;
 }
 
@@ -51,11 +49,6 @@ html, body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
-.wrapper{
-    max-width:100%;
-    height: auto;
-    object-fit: contain;
-}
 
 /*
 Newer browsers support flex, but some olders don't.
