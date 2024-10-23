@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Certificados</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="../../styles.css" rel="stylesheet">
+    <script src="../../funtions.js"></script>
+</head>
+<body>
+
+<!-- Menu de navegación fijo -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <a class="navbar-brand" href="#">
+        <img class="ms-3" src="../../assets/logo.png" alt="Logo Nuevo León" width="50"> Portal de Nuevo León
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../../servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../turismo.html">Turismo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../gobierno.html">Gobierno</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<br>
+
+<!-- Contenido principal -->
+<div class="container mt-5">
+    <h1 class="text-center pb-3">Servicio de Certificados</h1>
+
+    <!-- Imagen descriptiva -->
+    <div class="text-center mb-4">
+        <img src="certificado.jpg" alt="Educación por Teléfono" class="img-fluid" style="max-width: 600px;">
+    </div>
+
+    <!-- Información sobre el servicio de certificados -->
+    <div class="mt-5">
+        <p class="lead">El gobierno de Nuevo León ofrece un servicio para la emisión de certificados de estudios en línea y de forma presencial. Los certificados son documentos oficiales que acreditan la conclusión de un ciclo educativo.</p>
+
+        <br>
+        <h2>¿Cómo obtener tu certificado?</h2>
+        <p>Para obtener tu certificado de estudios, sigue los siguientes pasos:</p>
+        <ul>
+            <li><strong>Solicita tu certificado en línea:</strong> A través del portal oficial del gobierno, puedes solicitar la expedición de tu certificado.</li>
+            <li><strong>Revisión de datos:</strong> Asegúrate de que toda la información proporcionada sea correcta antes de completar la solicitud.</li>
+            <li><strong>Entrega o descarga:</strong> Una vez que tu solicitud haya sido aprobada, recibirás una notificación para descargar tu certificado en línea o podrás recogerlo en la institución correspondiente.</li>
+        </ul>
+
+        <br>
+        <h3>Requisitos</h3>
+        <ul>
+            <li>Comprobante de finalización del ciclo educativo</li>
+            <li>Identificación oficial vigente</li>
+            <li>Comprobante de pago (si aplica)</li>
+        </ul>
+
+        <br>
+        <h3>Costos</h3>
+        <p>La emisión de certificados puede tener un costo dependiendo del nivel educativo y del tipo de certificado. Revisa las tarifas vigentes en el portal o contacta a tu institución educativa para más detalles.</p>
+
+        <br>
+        <h3>Plazos de entrega</h3>
+        <p>El tiempo de entrega puede variar. Para certificados electrónicos, la emisión es inmediata tras la validación. Los certificados físicos pueden tardar entre 5 y 10 días hábiles.</p>
+
+        <a href="https://www.nl.gob.mx/certificados" class="btn page">Solicitar Certificado</a>
+    </div>
+
+    <!-- Formulario de evaluación -->
+    <div class="mt-5">
+        <h4>¿Esta información fue útil?</h4>
+        <form>
+            <div class="form-group pb-3">
+                <textarea class="form-control" id="inputField" name="feedback" rows="3" placeholder="Escribe tus comentarios aquí"></textarea>
+            </div>
+            <span data-toggle="modal" data-target="#exampleModal">
+                <button id="submitButton" type="button" class="btn page" data-bs-toggle="popover" data-bs-content="Debe introducir información.">Enviar</button>
+            </span>
+        </form>
+    </div>
+</div>
+<br><br>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Gracias por dejar su comentario, se ha guardado exitosamente: <span id="modalInputValue"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p><a href="#">Términos y condiciones de uso</a> | <a href="#">Aviso de privacidad</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/gobiernonuevoleon/?locale=es_LA" target="_blank"><img src="../../assets/facebook.png" alt="Facebook"></a>
+<a href="https://x.com/nuevoleon?lang=en" target="_blank"><img src="../../assets/twitter.png" alt="Twitter"></a>
+<a href="https://www.instagram.com/nuevoleonmx/?hl=en" target="_blank"><img src="../../assets/instagram.png" alt="Instagram"></a>
+        </div>
+        <br>
+        <p>
+            <a href="https://www.gob.mx/" target="_blank">Gobierno Mexicano</a> | 
+            <a href="https://www.monterrey.gob.mx/" target="_blank">Gobierno Municipal de Monterrey</a>
+        </p>
+        <img src="../../assets/icon_black.png" alt="Logo del Gobierno" width="100">
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

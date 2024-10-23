@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Farmacias</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="../../styles.css" rel="stylesheet">
+    <script src="../../funtions.js"></script>
+</head>
+<body>
+
+<!-- Menu de navegación fijo -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #fc8434;">
+    <a class="navbar-brand" href="#">
+        <img class="ms-3" src="../../assets/logo.png" alt="Logo Nuevo León" width="50"> Portal de Nuevo León
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav msW-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../../servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../turismo.html">Turismo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../gobierno.html">Gobierno</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<!-- Contenido principal -->
+<div class="container mt-5">
+    <h1 class="text-center pb-3">Servicio de Farmacias</h1>
+
+    <div class="text-center mb-4">
+        <img src="farmacia.jpg" alt="Educación por Teléfono" class="img-fluid" style="max-width: 600px;">
+    </div>
+
+    <!-- Información sobre el servicio de Farmacias -->
+    <div class="mt-5">
+        <p class="lead">El servicio de farmacias ofrece acceso a medicamentos y productos de salud necesarios para el bienestar de la población.</p>
+        <br>
+        <h2>¿Cómo acceder al servicio de farmacias?</h2>
+        <p>Para acceder a los servicios de farmacias, sigue estos pasos:</p>
+        <ul>
+            <li><strong>Ubicación de farmacias:</strong> Encuentra la farmacia más cercana a tu ubicación.</li>
+            <li><strong>Receta médica:</strong> Presenta la receta médica si es necesario para la compra de medicamentos controlados.</li>
+            <li><strong>Consultar disponibilidad:</strong> Verifica la disponibilidad de los productos en la farmacia.</li>
+        </ul>
+        <br>
+        <h3>Servicios disponibles</h3>
+        <p>Las farmacias ofrecen los siguientes servicios:</p>
+        <ul>
+            <li>Dispensación de medicamentos recetados.</li>
+            <li>Venta de productos de cuidado personal y salud.</li>
+            <li>Asesoría farmacéutica.</li>
+            <li>Vacunación y servicios de salud preventiva.</li>
+        </ul>
+        <br>
+        <h3>Costos</h3>
+        <p>Los precios de los medicamentos pueden variar. Consulta con la farmacia para obtener información sobre costos y posibles descuentos.</p>
+        <br>
+        <h3>Atención a clientes</h3>
+        <p>Si tienes preguntas sobre los servicios de farmacias, puedes contactar a la línea de atención al cliente de la farmacia o visitar su página web.</p>
+
+        <a href="https://www.gob.mx/salud/farmacias" class="btn page">Acceder al Servicio de Farmacias</a>
+    </div>
+
+    <!-- Formulario de evaluación -->
+    <div class="mt-5">
+        <h4>¿Esta información fue útil?</h4>
+        <form>
+            <div class="form-group pb-3">
+                <textarea class="form-control" id="inputField" name="feedback" rows="3" placeholder="Escribe tus comentarios aquí"></textarea>
+            </div>
+            <span data-toggle="modal" data-target="#exampleModal">
+                <button id="submitButton" type="button" class="btn page" data-bs-toggle="popover" data-bs-content="Debe introducir información.">Enviar</button>
+            </span>
+        </form>
+    </div>
+</div>
+
+<br><br>
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Gracias por dejar su comentario, se ha guardado exitosamente: <span id="modalInputValue"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p><a href="#">Términos y condiciones de uso</a> | <a href="#">Aviso de privacidad</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/gobiernonuevoleon/?locale=es_LA" target="_blank"><img src="../../assets/facebook.png" alt="Facebook"></a>
+<a href="https://x.com/nuevoleon?lang=en" target="_blank"><img src="../../assets/twitter.png" alt="Twitter"></a>
+<a href="https://www.instagram.com/nuevoleonmx/?hl=en" target="_blank"><img src="../../assets/instagram.png" alt="Instagram"></a>
+        </div>
+        <br>
+        <p>
+            <a href="https://www.gob.mx/" target="_blank">Gobierno Mexicano</a> | 
+            <a href="https://www.monterrey.gob.mx/" target="_blank">Gobierno Municipal de Monterrey</a>
+        </p>
+        <img src="../../assets/icon_black.png" alt="Logo del Gobierno" width="100">
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

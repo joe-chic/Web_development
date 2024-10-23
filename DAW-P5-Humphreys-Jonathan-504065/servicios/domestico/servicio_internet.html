@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicio de Internet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="../../styles.css" rel="stylesheet">
+    <script src="../../funtions.js"></script>
+</head>
+<body>
+
+<!-- Menu de navegación fijo -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: #fc8434;">
+    <a class="navbar-brand" href="#">
+        <img class="ms-3" src="../../assets/logo.png" alt="Logo Nuevo León" width="50"> Portal de Nuevo León
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" href="../../servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../turismo.html">Turismo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="../../gobierno.html">Gobierno</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<br>
+<!-- Contenido principal -->
+<div class="container mt-5">
+    <h1 class="text-center pb-3">Servicio de Internet</h1>
+    
+    <div class="text-center mb-4">
+        <img src="internet.jpg" alt="Educación por Teléfono" class="img-fluid" style="max-width: 600px;">
+    </div>
+
+    <!-- Información sobre el servicio de internet -->
+    <div class="mt-5">
+        <p class="lead">El acceso a Internet es un servicio esencial en la actualidad, que permite a los ciudadanos de Nuevo León conectarse, comunicarse y acceder a una amplia gama de servicios y recursos en línea.</p>
+
+        <br>
+        <h2>¿Cómo acceder al servicio de Internet?</h2>
+        <p>Si deseas contratar el servicio de Internet, puedes seguir los siguientes pasos:</p>
+        <ul>
+            <li><strong>Elección del proveedor:</strong> Investiga y elige un proveedor de servicios de Internet (ISP) que ofrezca cobertura en tu área, como Telmex, Totalplay o Axtel.</li>
+            <li><strong>Solicitar la instalación:</strong> Comunícate con el proveedor elegido para solicitar la instalación del servicio en tu domicilio.</li>
+            <li><strong>Configurar tu conexión:</strong> Una vez instalado, sigue las instrucciones proporcionadas para configurar tu red y disfrutar de Internet en tus dispositivos.</li>
+        </ul>
+
+        <br>
+        <h3>Requisitos para contratar el servicio</h3>
+        <ul>
+            <li>Identificación oficial vigente</li>
+            <li>Comprobante de domicilio</li>
+            <li>Pago de la instalación (si aplica)</li>
+        </ul>
+
+        <br>
+        <h3>Costos</h3>
+        <p>Los precios del servicio de Internet varían según el proveedor y el tipo de plan que elijas. Generalmente, se ofrecen planes que incluyen diferentes velocidades de conexión y beneficios adicionales, como telefonía o televisión.</p>
+
+        <br>
+        <h3>Atención a clientes</h3>
+        <p>Para consultas, quejas o soporte técnico, contacta a tu proveedor de Internet mediante su página web o a través de su línea de atención al cliente. El horario de atención varía según cada empresa.</p>
+
+        <a href="https://www.telmex.com/" class="btn page">Solicitar Servicio de Internet</a>
+    </div>
+
+    <!-- Formulario de evaluación -->
+    <div class="mt-5">
+        <h4>¿Esta información fue útil?</h4>
+        <form>
+            <div class="form-group pb-3">
+                <textarea class="form-control" id="inputField" name="feedback" rows="3" placeholder="Escribe tus comentarios aquí"></textarea>
+            </div>
+            <span data-toggle="modal" data-target="#exampleModal">
+                <button id="submitButton" type="button" class="btn page" data-bs-toggle="popover" data-bs-content="Debe introducir información.">Enviar</button>
+            </span>
+        </form>
+    </div>
+</div>
+
+<br><br>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Gracias por dejar su comentario, se ha guardado exitosamente: <span id="modalInputValue"></span>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <p><a href="#">Términos y condiciones de uso</a> | <a href="#">Aviso de privacidad</a></p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/gobiernonuevoleon/?locale=es_LA" target="_blank"><img src="../../assets/facebook.png" alt="Facebook"></a>
+<a href="https://x.com/nuevoleon?lang=en" target="_blank"><img src="../../assets/twitter.png" alt="Twitter"></a>
+<a href="https://www.instagram.com/nuevoleonmx/?hl=en" target="_blank"><img src="../../assets/instagram.png" alt="Instagram"></a>
+        </div>
+        <br>
+        <p>
+            <a href="https://www.gob.mx/" target="_blank">Gobierno Mexicano</a> | 
+            <a href="https://www.monterrey.gob.mx/" target="_blank">Gobierno Municipal de Monterrey</a>
+        </p>
+        <img src="../../assets/icon_black.png" alt="Logo del Gobierno" width="100">
+    </div>
+</footer>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
